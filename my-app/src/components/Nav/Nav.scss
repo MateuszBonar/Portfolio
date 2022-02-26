@@ -4,17 +4,15 @@
   width: 100%;
   height: 100px;
   position: fixed;
+  background: $secondary-dark-color;
   top: 0;
-  background: #1f2235;
   z-index: 1;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 20px $black-color;
 
 
   &__container {
-    display: flex;
+    @include flex($justify: space-between);
     height: 100px;
-    align-items: center;
-    justify-content: space-between;
   }
 
   &__left-logo {
@@ -38,16 +36,15 @@
 }
 
 .toggle {
+  @include flex($justify: center);
   position: fixed;
   top: 20px;
   right: 25px;
-  background: #000;
-  color: #fff;
+  background: $black-color;
+  color: $white-color;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   cursor: pointer;
-  align-items: center;
-  justify-content: center;
   display: none;
 }

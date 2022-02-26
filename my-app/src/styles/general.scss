@@ -8,21 +8,12 @@
   background: $secondary-dark-color;
 }
 
-.h-650 {
-  height: 650px;
-}
-.alignCenter {
-  align-items: center;
-}
-.justifyConter {
-  justify-content: center;
-}
-
 .row {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
 }
+
 .col-6 {
   width: 50%;
 }
@@ -49,8 +40,15 @@
   margin-bottom: 15px;
 
   &:hover {
-    color: #fff;
+    color: $white-color;
   }
+}
+
+.commonBorder {
+  background: #ff4a57;
+  height: 3px;
+  width: 100px;
+  margin: 30px auto;
 }
 
 

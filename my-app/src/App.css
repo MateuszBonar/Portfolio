@@ -7,11 +7,3 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-
-.commonBorder {
-  background: #ff4a57;
-  height: 3px;
-  width: 100px;
-  margin: 30px auto;
-}
-

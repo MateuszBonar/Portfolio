@@ -11,9 +11,9 @@ const Skills: FC = (): JSX.Element => {
         <WrapperContainer classes={['skills', 'container']}>
             <div className="skills__header">
                 <div className="skills__common">
-                    <h3 className="heading">{t('inf_skills_main_header')}</h3>
-                    <h1 className="mainHeader">{t('inf_skills_main_subheader')}</h1>
-                    <p className="mainContent">{t('inf_skills_text')}</p>
+                    <h3>{t('inf_skills_main_header')}</h3>
+                    <h1>{t('inf_skills_main_subheader')}</h1>
+                    <p>{t('inf_skills_text')}</p>
                     <div className="commonBorder"/>
                 </div>
 

@@ -8,16 +8,16 @@ import './Banner.scss'
 
 const Banner: FC = (): JSX.Element => {
     const {t} = useTranslation();
-    const bannerIcons = <div className='header__content'>
-        <div className='header__section'>
-            <ul className='header__ul'>
+    const bannerIcons = <div className='banner__content'>
+        <div className='banner__section'>
+            <ul className='banner__ul'>
                 {appConfig.banner.bannerIcons.map(({icon}) => <li>
                     {icon}
                 </li>)}
             </ul>
             <h1>{t('inf_banner_title')}</h1>
             <p>{t('inf_banner_text')}</p>
-            <div className='header__buttons'>
+            <div className='banner__buttons'>
                 <a className='btn btn-outline'>
                     {t('inf_banner_my_cv')}
                 </a>
@@ -30,7 +30,7 @@ const Banner: FC = (): JSX.Element => {
     </div>;
 
     return (
-        <WrapperContainer classes={['header', 'container']}>
+        <WrapperContainer classes={['banner', 'container']}>
             <div className='row'>
                 <div className='col-6'>
                     {bannerIcons}

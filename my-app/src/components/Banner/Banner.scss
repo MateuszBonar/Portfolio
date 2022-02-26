@@ -1,6 +1,6 @@
 @import "src/styles/main";
 
-.header {
+.banner {
   width: 100%;
   height: 100vh;
   background: $secondary-dark-color;
@@ -8,7 +8,6 @@
 
   &__img {
     padding: 0 30px;
-    margin-top: 150px;
   }
 
   &__content {
