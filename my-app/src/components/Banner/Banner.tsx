@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 import {useTranslation} from "react-i18next";
-
+import Typewriter from 'typewriter-effect';
 import {appConfig} from 'Constants';
 import {WrapperContainer} from "Components/index";
 
@@ -19,7 +19,13 @@ const Banner: FC = (): JSX.Element => {
                 </li>)}
             </ul>
             <h1>{t('inf_banner_title')}</h1>
-            <p>{t('inf_banner_text')}</p>
+            <p><Typewriter
+                options={{
+                    strings: [t('inf_banner_text'), t('inf_banner_text_1'), t('inf_banner_text_2'), t('inf_banner_text_3')],
+                    autoStart: true,
+                    loop: true,
+                }}
+            /></p>
             <div className='banner__buttons'>
                 <a className='btn btn-outline'>
                     {t('inf_banner_my_cv')}
