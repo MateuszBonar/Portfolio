@@ -11,7 +11,7 @@ const Contact = () => {
     return (
         <WrapperContainer classes={['contact', 'container']}>
             <div className="contact__contact-section">
-                <div className="col-6">
+                <div className="contact__section-wrapper">
                     <p>
                         {t('inf_contact_description')}
                     </p>

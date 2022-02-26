@@ -1,12 +1,13 @@
 @import './variables.scss';
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
-.bgMain {
-  background: $secondary-dark-color;
-}
+
+//.bgMain {
+//  background: $secondary-dark-color;
+//}
 
 .row {
   display: flex;

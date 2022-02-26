@@ -14,12 +14,11 @@ const Skills: FC = (): JSX.Element => {
                     <h3>{t('inf_skills_main_header')}</h3>
                     <h1>{t('inf_skills_main_subheader')}</h1>
                     <p>{t('inf_skills_text')}</p>
-                    <div className="commonBorder"/>
                 </div>
 
-                <div className="row bgMain">
+                <div className="skills__cards">
                     {appConfig.skills.mySkills.map((info) => (
-                        <div className="col-4 bgMain">
+                        <div className="skills__wrapper-box">
                             <div className="skills__box">
                                 {info.icon}
                                 <div className="skills__box-header">{info.heading}</div>

@@ -2,9 +2,9 @@
 
 .banner {
   width: 100%;
-  height: 100vh;
   background: $secondary-dark-color;
   overflow: hidden;
+  @include flex;
 
   &__img {
     padding: 0 30px;

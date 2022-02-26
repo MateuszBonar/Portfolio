@@ -26,18 +26,14 @@ const Banner: FC = (): JSX.Element => {
     </div>;
 
     const bannerImg = <div className='banner__img'>
-        <img src={appConfig.banner.image} alt='man'/>
+        <img src="../../assets/images/man-01.png" alt='man'/>
     </div>;
 
     return (
         <WrapperContainer classes={['banner', 'container']}>
-            <div className='row'>
-                <div className='col-6'>
+            <div>
                     {bannerIcons}
-                </div>
-                <div className='col-6'>
                     {bannerImg}
-                </div>
             </div>
         </WrapperContainer>
     );
