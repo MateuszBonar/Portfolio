@@ -11,7 +11,7 @@ const Contact = () => {
                 <div className="row justifyConter">
                     <div className="col-6">
                         <p>
-                            {t(appConfig.contact.description)}
+                            {t('inf_contact_description')}
                         </p>
                         <ul className="contactCircles">
                             {appConfig.contact.contactIcons.map(({icon}) => <li>

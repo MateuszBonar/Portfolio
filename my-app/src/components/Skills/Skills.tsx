@@ -1,15 +1,17 @@
 import React, {FC} from "react";
-import {appConfig} from "../../constants";
+import {appConfig} from "Constants";
 import {WrapperContainer} from "Components";
+import {useTranslation} from "react-i18next";
 
 const Skills: FC = (): JSX.Element => {
+    const {t} = useTranslation()
     return (
         <WrapperContainer classes={['services', 'container']}>
             <div className="services__header">
                 <div className="common">
-                    <h3 className="heading">{appConfig.skills.mainHeader}</h3>
-                    <h1 className="mainHeader">{appConfig.skills.subHeading}</h1>
-                    <p className="mainContent">{appConfig.skills.text}</p>
+                    <h3 className="heading">{t('inf_skills_main_header')}</h3>
+                    <h1 className="mainHeader">{t('inf_skills_main_subheader')}</h1>
+                    <p className="mainContent">{t('inf_skills_text')}</p>
                     <div className="commonBorder"/>
                 </div>
 

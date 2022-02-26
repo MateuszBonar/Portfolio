@@ -13,12 +13,12 @@ const Banner: FC = (): JSX.Element => {
                     {icon}
                 </li>)}
             </ul>
-            <h1>{appConfig.banner.title}</h1>
-            <p>{appConfig.banner.text}</p>
+            <h1>{t('inf_banner_title')}</h1>
+            <p>{t('inf_banner_text')}</p>
             <div className='header__buttons'>
-                <a href='' className='btn btn-outline'>
+                <p className='btn btn-outline'>
                     {t('inf_banner_my_cv')}
-                </a>
+                </p>
             </div>
         </div>
     </div>;

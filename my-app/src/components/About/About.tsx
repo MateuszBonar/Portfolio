@@ -8,8 +8,8 @@ const About: FC = (): JSX.Element => {
     return (
         <WrapperContainer classes={['about', 'container']}>
             <div className='common'>
-                <h1 className='mainHeader'>{t(appConfig.about.subHeader)}</h1>
-                <p className='mainContent'>{t(appConfig.about.text)}</p>
+                <h1 className='mainHeader'>{t('inf_about_me_header')}</h1>
+                <p className='mainContent'>{t('inf_about_me_subheader')}</p>
                 <div className='commonBorder'/>
             </div>
             <div className='row  h-650 alignCenter'>
@@ -20,12 +20,12 @@ const About: FC = (): JSX.Element => {
                 </div>
                 <div className='col-6'>
                     <div className='about__info'>
-                        <h1>{t(appConfig.about.title)}</h1>
+                        <h1>{t('inf_about_me_title')}</h1>
                         <div className='about__info-p1'>
-                            {t(appConfig.about.about_1)}
+                            {t('inf_about_me_about_1')}
                         </div>
                         <div className='about__info-p2'>
-                            {t(appConfig.about.about_2)}
+                            {t('inf_about_me_about_2')}
                         </div>
                     </div>
                 </div>
