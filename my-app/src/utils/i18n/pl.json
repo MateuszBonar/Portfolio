@@ -1,0 +1,19 @@
+{
+  "translations": {
+    "inf_about_me_header": "O mnie",
+    "inf_about_me_subheader": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "inf_about_me_text": "Lorem Ipsum is simply dummy text of the printing and types",
+    "inf_about_me_title": "Hi there",
+    "inf_about_me_about_1": "In id nulla magna. Nullam posuere fermentum mattis. Nunc id dui In id nulla magna. Nullam posuere fermentum mattis. Nunc id dui In id nulla magna. Nullam posuere fermentum mattis. Nunc id dui",
+    "inf_about_me_about_2": "In id nulla magna. Nullam posuere",
+    "inf_banner_my_cv": "My Portfolio",
+    "inf_banner_title": "Jestem Mateusz Bonar",
+    "inf_banner_text": "i,m Jonathan, professional web developer with long time",
+    "inf_contact_description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do",
+    "inf_skills_main_header": "Moje umiejętności",
+    "inf_skills_main_subheader": "Moje umiejętności",
+    "inf_skills_text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text",
+    "inf_skills_1_heading": "Web Development",
+    "inf_skills_1_text": "Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy"
+  }
+}
