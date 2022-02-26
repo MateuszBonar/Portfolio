@@ -1,48 +1,32 @@
-import React, {FC} from "react";
-import { FaAlignJustify } from "react-icons/fa";
+import React, {FC, useState} from "react";
+import {FaAlignJustify} from "react-icons/fa";
+import {navItems} from "./constants";
+import NavItem from "./NavItem";
 
-const Nav:FC = (): JSX.Element => {
-    const [state, setState] = React.useState(true);
+const Nav: FC = (): JSX.Element => {
+    const [isNavVisible, setIsNavVisible] = useState<boolean>(true)
+
+    const logo = <div className="navbar__left-logo">
+        <img src="" alt="logo"/>
+    </div>
+
+    const toggleNav = (): void => {
+        setIsNavVisible(!isNavVisible)
+    }
     return (
         <nav className="navbar">
             <div className="container">
                 <div className="navbar__container">
                     <ul className="navbar__left">
-                        <div className="navbar__left-logo">
-                            <img src="" alt="logo" />
-                        </div>
+                        {logo}
                     </ul>
-                    {state ? (
-                        <ul className="navbar__right">
-                            <li>
-                                <a href="">Home</a>
-                            </li>
-                            <li>
-                                <a href="">Services</a>
-                            </li>
-                            <li>
-                                <a href="">About</a>
-                            </li>
-                            <li>
-                                <a href="">Skills</a>
-                            </li>
-                            <li>
-                                <a href="">Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="">Blog</a>
-                            </li>
-                            <li>
-                                <a href="">Contact</a>
-                            </li>
-                        </ul>
-                    ) : (
-                        ""
-                    )}
+                    <ul className="navbar__right">
+                        {isNavVisible && navItems.map(({name, id}) => <NavItem key={id} name={name}/>)}
+                    </ul>
                 </div>
             </div>
-            <div className="toggle" onClick={() => setState(!state)}>
-                <FaAlignJustify />
+            <div className="toggle" onClick={toggleNav}>
+                <FaAlignJustify/>
             </div>
         </nav>
     );
