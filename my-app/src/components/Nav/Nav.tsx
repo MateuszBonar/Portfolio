@@ -21,7 +21,7 @@ const Nav: FC = (): JSX.Element => {
             <div className="container">
                 <div className="navbar__container">
                     <ul className="navbar__left">
-                        {logo}
+
                     </ul>
                     <ul className="navbar__right">
                         {isNavVisible && navItems.map(({name, id}) => <NavItem key={id} name={name}/>)}

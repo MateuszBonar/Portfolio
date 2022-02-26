@@ -15,14 +15,8 @@
     height: 100px;
   }
 
-  &__left-logo {
-    img {
-      width: 110px;
-    }
-  }
-
   &__right {
-    display: flex;
+    @include flex;
     list-style-type: none;
 
     li a {

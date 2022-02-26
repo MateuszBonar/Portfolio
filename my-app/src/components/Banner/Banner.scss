@@ -3,24 +3,41 @@
 .banner {
   width: 100%;
   background: $secondary-dark-color;
-  overflow: hidden;
-  @include flex;
+  padding: 150px 10% 0 10%;
+
+  &__wrapper {
+    @include flex;
+    width:100%;
+    flex-direction: column;
+    padding: 0 40px;
+
+    @include breakpoint(md) {
+      flex-direction: row;
+    }
+  }
 
   &__img {
+    width: 400px;
+    height:400px;
     padding: 0 30px;
+
+    img {
+      width: 400px;
+      height:400px;
+    }
   }
 
   &__content {
-    display: flex;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
+    @include flex;
+    height: calc(100vh - 150px);
+    width: 50%;
     color: $white-color;
+    margin-bottom: 20px;
   }
 
   &__ul {
     list-style-type: none;
-    display: flex;
+    @include flex;
     margin-bottom: 20px;
 
     li {
@@ -28,9 +45,7 @@
       height: 50px;
       border: 2px solid $primary-red-color;
       border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include flex($justify: center);
       margin: 0 10px;
       transition: all 0.5s linear;
       cursor: pointer;
@@ -45,9 +60,6 @@
       }
     }
   }
-  .headerIcon:hover {
-    color: $primary-red-color
-  }
 
   &__section {
     h1 {
@@ -61,6 +73,14 @@
       font-weight: 300;
       line-height: 40px;
       margin-bottom: 50px;
+    }
+  }
+
+  &__buttons {
+    a:hover {
+      cursor: pointer;
+      background: $primary-red-color;
+      transition: all 0.5s linear;
     }
   }
 }

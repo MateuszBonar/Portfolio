@@ -8,7 +8,8 @@ import './Banner.scss'
 
 const Banner: FC = (): JSX.Element => {
     const {t} = useTranslation();
-    const bannerIcons = <div className='banner__content'>
+
+    const bannerContent = <div className='banner__content'>
         <div className='banner__section'>
             <ul className='banner__ul'>
                 {appConfig.banner.bannerIcons.map(({icon}) => <li>
@@ -26,14 +27,14 @@ const Banner: FC = (): JSX.Element => {
     </div>;
 
     const bannerImg = <div className='banner__img'>
-        <img src="../../assets/images/man-01.png" alt='man'/>
+        <img src="https://previews.123rf.com/images/vadymvdrobot/vadymvdrobot2003/vadymvdrobot200300051/142744663-image-of-a-young-strong-happy-cheery-sports-man-posing-outdoors-in-nature-green-park-looking-camera-.jpg" alt='man'/>
     </div>;
 
     return (
         <WrapperContainer classes={['banner', 'container']}>
-            <div>
-                    {bannerIcons}
-                    {bannerImg}
+            <div className="banner__wrapper">
+                {bannerContent}
+                {bannerImg}
             </div>
         </WrapperContainer>
     );
