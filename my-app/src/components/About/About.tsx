@@ -9,7 +9,7 @@ const About: FC = (): JSX.Element => {
     const {t} = useTranslation();
 
     return (
-        <WrapperContainer classes={['about', 'container']}>
+        <WrapperContainer classes={['about', 'container']} id="about">
             <div>
                 <div className='about__info'>
                     <h1>{t('inf_about_me_title')}</h1>

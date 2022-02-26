@@ -8,7 +8,7 @@ import './Skills.scss'
 const Skills: FC = (): JSX.Element => {
     const {t} = useTranslation()
     return (
-        <WrapperContainer classes={['skills', 'container']}>
+        <WrapperContainer classes={['skills', 'container']} id="skills">
             <div className="skills__header">
                 <div className="skills__common">
                     <h3>{t('inf_skills_main_header')}</h3>
@@ -21,8 +21,8 @@ const Skills: FC = (): JSX.Element => {
                         <div className="skills__wrapper-box">
                             <div className="skills__box">
                                 {info.icon}
-                                <div className="skills__box-header">{info.heading}</div>
-                                <div className="skills__box-p">{info.text}</div>
+                                <div className="skills__box-header">{t(info.heading)}</div>
+                                <div className="skills__box-p">{t(info.text)}</div>
                             </div>
                         </div>
                     ))}

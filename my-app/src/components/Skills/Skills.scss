@@ -30,6 +30,10 @@
 
     &:hover {
       background: $primary-red-color;
+
+      .commonIcons {
+        color: $white-color;
+      }
     }
   }
 

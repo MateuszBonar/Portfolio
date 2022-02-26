@@ -14,7 +14,17 @@
   &__section-wrapper {
     padding: 0 20px;
 
-    p {
+    div {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__quote {
+    text-align: center;
+
+    p:first-child {
+      font-style: italic;
+      font-size: 19px;
       margin-bottom: 10px;
     }
   }

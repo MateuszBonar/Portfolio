@@ -6,8 +6,8 @@ import {
     FaFacebookF,
     FaFileVideo,
     FaGithub,
-    FaInstagram, FaSearchDollar,
-    FaTwitter
+    FaSearchDollar,
+    FaLinkedin,
 } from 'react-icons/fa';
 
 export const appConfig = {
@@ -15,10 +15,12 @@ export const appConfig = {
         image: '',
         bannerIcons: [{
             icon: <FaFacebookF className='headerIcon'/>,
+            link: 'https://www.facebook.com/mateusz.bonar.1'
         }, {
-            icon: <FaTwitter className='headerIcon'/>,
+            icon: <FaGithub className='headerIcon'/>,
+            link: 'https://github.com/MateuszBonar'
         }, {
-            icon: <FaInstagram className='headerIcon'/>,
+            icon: <FaLinkedin className='headerIcon'/>, link: 'https://www.linkedin.com/in/mateusz-bonar-98b923180/'
         }],
     },
     skills: {
@@ -32,13 +34,13 @@ export const appConfig = {
             {
                 id: 2,
                 icon: <FaCamera className="commonIcons"/>,
-                heading: "inf_skills_1_heading",
+                heading: "inf_skills_2_heading",
                 text: "inf_skills_1_text",
             }, {
                 id: 3,
                 icon: <FaCircleNotch className="commonIcons"/>,
-                heading: "inf_skills_1_heading",
-                text: "inf_skills_1_text",
+                heading: "inf_skills_3_heading",
+                text: "inf_skills_3_text",
             }, {
                 id: 4,
                 icon: <FaApple className="commonIcons"/>,
@@ -59,10 +61,13 @@ export const appConfig = {
     contact: {
         contactIcons: [{
             icon: <FaFacebookF className="contactIcon"/>,
+            link: 'https://www.facebook.com/mateusz.bonar.1'
         }, {
-            icon: <FaTwitter className="contactIcon"/>,
+            icon: <FaGithub className="contactIcon"/>,
+            link: 'https://github.com/MateuszBonar'
         }, {
-            icon: <FaInstagram className="contactIcon"/>,
+            icon: <FaLinkedin className="contactIcon"/>,
+            link: 'https://www.linkedin.com/in/mateusz-bonar-98b923180/'
         }],
     }
 };

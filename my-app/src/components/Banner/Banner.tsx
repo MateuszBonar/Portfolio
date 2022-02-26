@@ -12,8 +12,10 @@ const Banner: FC = (): JSX.Element => {
     const bannerContent = <div className='banner__content'>
         <div className='banner__section'>
             <ul className='banner__ul'>
-                {appConfig.banner.bannerIcons.map(({icon}) => <li>
-                    {icon}
+                {appConfig.banner.bannerIcons.map(({icon, link}) => <li>
+                    <a href={link}>
+                        {icon}
+                    </a>
                 </li>)}
             </ul>
             <h1>{t('inf_banner_title')}</h1>
@@ -27,8 +29,8 @@ const Banner: FC = (): JSX.Element => {
     </div>;
 
     return (
-        <WrapperContainer classes={['banner', 'container']}>
-            <div className="banner__wrapper">
+        <WrapperContainer classes={['banner', 'container']} id="home">
+            <div className="banner__wrapper" id="home">
                 {bannerContent}
                 <div className='banner__img'/>
             </div>
