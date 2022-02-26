@@ -1,7 +1,8 @@
 import React from "react";
+import {useTranslation} from "react-i18next";
+
 import {appConfig} from "Constants";
 import {WrapperContainer} from "Components";
-import {useTranslation} from "react-i18next";
 
 const Contact = () => {
     const {t} = useTranslation();
