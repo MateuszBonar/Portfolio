@@ -3,3 +3,5 @@ export { default as Banner } from './Banner';
 export { default as Contact } from './Contact';
 export { default as Nav } from './Nav';
 export { default as Skills } from './Skills';
+export {default as WrapperContainer} from './Commons/WrapperContainer'
+export {default as MyPicture} from './Commons/MyPicture'
