@@ -1,20 +1,8 @@
-import React, {FC, useState} from "react";
-import {
-    FaFacebookF,
-    FaTwitter,
-    FaPinterest,
-    FaInstagram,
-    FaPlay,
-} from "react-icons/fa";
+import React, {FC} from "react";
+import { appConfig } from '../../constatns';
+
 
 const Banner:FC = ():JSX.Element => {
-    const [state] = useState({
-        title: "I am Jonathan Doe",
-        text:
-            "i,m Jonathan, professional web developer with long time \
-          experience in this field​",
-        image: "",
-    });
 
     return (
         <header className="header">
@@ -24,36 +12,24 @@ const Banner:FC = ():JSX.Element => {
                         <div className="header__content">
                             <div className="header__section">
                                 <ul className="header__ul">
-                                    <li>
-                                        <FaFacebookF className="headerIcon" />
-                                    </li>
-                                    <li>
-                                        <FaTwitter className="headerIcon" />
-                                    </li>
-                                    <li>
-                                        <FaPinterest className="headerIcon" />
-                                    </li>
-                                    <li>
-                                        <FaInstagram className="headerIcon" />
-                                    </li>
+                                    {appConfig.banner.bannerIcons.map( ({ icon }) => <li>
+                                        {icon}
+                                    </li>)}
                                 </ul>
-                                <h1>{state.title}</h1>
-                                <p>{state.text}</p>
+                                <h1>{appConfig.banner.title}</h1>
+                                <p>{appConfig.banner.text}</p>
                                 <div className="header__buttons">
                                     <a href="" className="btn btn-outline">
                                         My Portfolio
                                     </a>
                                     &nbsp;&nbsp;&nbsp;
-                                    <a href="" className="btn btn-smart">
-                                        <FaPlay className="play" />
-                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="col-6">
                         <div className="banner__img">
-                            <img src={state.image} alt="man" />
+                            <img src={appConfig.banner.image} alt="man" />
                         </div>
                     </div>
                 </div>
