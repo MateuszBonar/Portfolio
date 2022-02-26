@@ -27,7 +27,7 @@ const Banner: FC = (): JSX.Element => {
                 }}
             /></p>
             <div className='banner__buttons'>
-                <a className='btn btn-outline'>
+                <a className='btn btn-outline' href='/assets/CV_Mateusz_Bonar.pdf' download>
                     {t('inf_banner_my_cv')}
                 </a>
             </div>
