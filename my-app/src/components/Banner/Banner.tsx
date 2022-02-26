@@ -26,15 +26,11 @@ const Banner: FC = (): JSX.Element => {
         </div>
     </div>;
 
-    const bannerImg = <div className='banner__img'>
-        <img src="https://previews.123rf.com/images/vadymvdrobot/vadymvdrobot2003/vadymvdrobot200300051/142744663-image-of-a-young-strong-happy-cheery-sports-man-posing-outdoors-in-nature-green-park-looking-camera-.jpg" alt='man'/>
-    </div>;
-
     return (
         <WrapperContainer classes={['banner', 'container']}>
             <div className="banner__wrapper">
                 {bannerContent}
-                {bannerImg}
+                <div className='banner__img'/>
             </div>
         </WrapperContainer>
     );

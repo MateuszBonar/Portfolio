@@ -5,24 +5,6 @@
   margin: 0 auto;
 }
 
-//.bgMain {
-//  background: $secondary-dark-color;
-//}
-
-//.row {
-//  display: flex;
-//  width: 100%;
-//  flex-wrap: wrap;
-//}
-
-//.col-6 {
-//  width: 50%;
-//}
-//
-//.col-4 {
-//  width: 33.33333333333333%;
-//}
-
 .btn {
   outline: none;
   border: none;
@@ -35,6 +17,7 @@
   border-radius: 50px;
   padding: 13px 40px;
 }
+
 .commonIcons {
   font-size: 40px;
   color: $primary-red-color;
@@ -44,12 +27,3 @@
     color: $white-color;
   }
 }
-
-.commonBorder {
-  background: #ff4a57;
-  height: 3px;
-  width: 100px;
-  margin: 30px auto;
-}
-
-

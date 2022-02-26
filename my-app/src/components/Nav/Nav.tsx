@@ -8,10 +8,6 @@ import './Nav.scss'
 const Nav: FC = (): JSX.Element => {
     const [isNavVisible, setIsNavVisible] = useState<boolean>(true)
 
-    const logo = <div className="navbar__left-logo">
-        <img src="" alt="logo"/>
-    </div>
-
     const toggleNav = (): void => {
         setIsNavVisible(!isNavVisible)
     }

@@ -11,28 +11,28 @@
     flex-direction: column;
     padding: 0 40px;
 
-    @include breakpoint(md) {
+    @include breakpoint(lg) {
       flex-direction: row;
     }
   }
 
   &__img {
-    width: 400px;
-    height:400px;
+    width: 500px;
+    height:600px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../../../public/images/picture.jpg");
     padding: 0 30px;
-
-    img {
-      width: 400px;
-      height:400px;
-    }
   }
 
   &__content {
     @include flex;
     height: calc(100vh - 150px);
-    width: 50%;
+    width: 60%;
     color: $white-color;
     margin-bottom: 20px;
+    margin-right: 20px;
   }
 
   &__ul {
@@ -41,17 +41,17 @@
     margin-bottom: 20px;
 
     li {
+      @include flex($justify: center);
       width: 50px;
       height: 50px;
       border: 2px solid $primary-red-color;
       border-radius: 50%;
-      @include flex($justify: center);
       margin: 0 10px;
       transition: all 0.5s linear;
       cursor: pointer;
 
       &:hover,  {
-        background: $white-color;
+        background: $primary-red-color;
         border: 2px solid transparent;
       }
 
