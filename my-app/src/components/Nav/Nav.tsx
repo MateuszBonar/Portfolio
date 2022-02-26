@@ -3,6 +3,8 @@ import {FaAlignJustify} from "react-icons/fa";
 import {navItems} from "./constants";
 import NavItem from "./NavItem";
 
+import './Nav.scss'
+
 const Nav: FC = (): JSX.Element => {
     const [isNavVisible, setIsNavVisible] = useState<boolean>(true)
 
@@ -13,6 +15,7 @@ const Nav: FC = (): JSX.Element => {
     const toggleNav = (): void => {
         setIsNavVisible(!isNavVisible)
     }
+
     return (
         <nav className="navbar">
             <div className="container">

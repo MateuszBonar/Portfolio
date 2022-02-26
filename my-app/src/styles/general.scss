@@ -1,0 +1,56 @@
+@import './variables.scss';
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.bgMain {
+  background: $secondary-dark-color;
+}
+
+.h-650 {
+  height: 650px;
+}
+.alignCenter {
+  align-items: center;
+}
+.justifyConter {
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.col-6 {
+  width: 50%;
+}
+
+.col-4 {
+  width: 33.33333333333333%;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  color: $white-color;
+  text-decoration: none;
+}
+
+.btn-outline {
+  border: 2px solid $primary-red-color;
+  border-radius: 50px;
+  padding: 13px 40px;
+}
+.commonIcons {
+  font-size: 40px;
+  color: $primary-red-color;
+  margin-bottom: 15px;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+

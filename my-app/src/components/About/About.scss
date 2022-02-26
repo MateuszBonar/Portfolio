@@ -1,0 +1,39 @@
+@import "src/styles/main";
+
+.about {
+  width: 100%;
+  background: $dark-color;
+  padding: 100px 0;
+
+  &__img {
+    padding: 30px;
+
+    img {
+      width: 300px;
+      height: 400px;
+    }
+  }
+
+  &__info {
+    color: $white-color;
+    h1 {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__info-p1 {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  &__contacts {
+    margin-top: 20px;
+
+    p {
+      margin-top: 3px;
+    }
+    strong {
+      color: $primary-red-color
+    }
+  }
+}

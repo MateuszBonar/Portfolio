@@ -4,6 +4,7 @@ import {useTranslation} from "react-i18next";
 import {appConfig} from 'Constants';
 import {WrapperContainer} from "Components/index";
 
+import './Banner.scss'
 
 const Banner: FC = (): JSX.Element => {
     const {t} = useTranslation();
@@ -17,9 +18,9 @@ const Banner: FC = (): JSX.Element => {
             <h1>{t('inf_banner_title')}</h1>
             <p>{t('inf_banner_text')}</p>
             <div className='header__buttons'>
-                <span className='btn btn-outline'>
+                <a className='btn btn-outline'>
                     {t('inf_banner_my_cv')}
-                </span>
+                </a>
             </div>
         </div>
     </div>;
