@@ -1,13 +1,13 @@
-import React from "react";
+import React, {FC} from "react";
 import {useTranslation} from "react-i18next";
+import {Fade} from "react-awesome-reveal";
 
 import {appConfig} from "Constants";
 import {WrapperContainer} from "Components";
 
 import './Contact.scss'
-import {Fade} from "react-awesome-reveal";
 
-const Contact = () => {
+const Contact:FC = ():JSX.Element => {
     const {t} = useTranslation();
     return (
         <WrapperContainer classes={['contact', 'container']} id="contact">

@@ -1,13 +1,15 @@
 import React, {FC} from "react";
-import {appConfig} from "Constants";
-import {WrapperContainer} from "Components";
+import {Fade} from "react-awesome-reveal";
 import {useTranslation} from "react-i18next";
 
+import {appConfig} from "Constants";
+import {WrapperContainer} from "Components";
+
 import './Skills.scss'
-import {Fade} from "react-awesome-reveal";
 
 const Skills: FC = (): JSX.Element => {
     const {t} = useTranslation()
+
     return (
         <WrapperContainer classes={['skills', 'container']} id="skills">
             <div className="skills__header">

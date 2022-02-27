@@ -1,0 +1,54 @@
+@import "src/styles/main";
+
+.email {
+  background: $secondary-dark-color;
+  padding: 0 20px 40px;
+
+  &__title-box {
+    @include flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  &__subheader {
+      font-size: 14px;
+      color: $primary-red-color;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+  }
+
+  &__header {
+    font-size: 32px;
+    padding-bottom: 20px;
+    color: $white-color;
+  }
+
+  &__desc {
+    line-height:30px;
+
+    color: $white-color;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  &__contact-info {
+    width: 30%;
+    padding: 25px;
+    background : $dark-color;
+  }
+
+  &__contact-info-content {
+    margin-left: 30px;
+
+    span {
+      font-size: 30px;
+      color: $white-color;
+    }
+
+    p {
+      color: $white-color;
+    }
+  }
+}
+
