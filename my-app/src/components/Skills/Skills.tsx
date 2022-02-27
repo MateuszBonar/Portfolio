@@ -4,6 +4,7 @@ import {WrapperContainer} from "Components";
 import {useTranslation} from "react-i18next";
 
 import './Skills.scss'
+import {Fade} from "react-awesome-reveal";
 
 const Skills: FC = (): JSX.Element => {
     const {t} = useTranslation()
@@ -16,17 +17,19 @@ const Skills: FC = (): JSX.Element => {
                     <p>{t('inf_skills_text')}</p>
                 </div>
 
-                <div className="skills__cards">
-                    {appConfig.skills.mySkills.map((info) => (
-                        <div className="skills__wrapper-box">
-                            <div className="skills__box">
-                                {info.icon}
-                                <div className="skills__box-header">{t(info.heading)}</div>
-                                <div className="skills__box-p">{t(info.text)}</div>
+                <Fade>
+                    <div className="skills__cards">
+                        {appConfig.skills.mySkills.map((info) => (
+                            <div className="skills__wrapper-box">
+                                <div className="skills__box">
+                                    {info.icon}
+                                    <div className="skills__box-header">{t(info.heading)}</div>
+                                    <div className="skills__box-p">{t(info.text)}</div>
+                                </div>
                             </div>
-                        </div>
-                    ))}
-                </div>
+                        ))}
+                    </div>
+                </Fade>
             </div>
         </WrapperContainer>
     );
