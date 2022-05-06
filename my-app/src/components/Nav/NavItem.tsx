@@ -1,9 +1,9 @@
 import React, {FC} from "react";
 
 
-const NavItem: FC<{ name: string, href: string}> = ({name, href}): JSX.Element =>
+const NavItem: FC<{ name: string, href: string, handleClick: () =>  void}> = ({name, href,handleClick}): JSX.Element =>
     <li>
-        <a href={href}>{name}</a>
+        <a href={href} onClick={handleClick}>{name}</a>
     </li>
 
 export default NavItem;

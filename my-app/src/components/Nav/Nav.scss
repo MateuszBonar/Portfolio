@@ -13,12 +13,9 @@
   &__container {
     @include flex($justify: space-between);
     height: 100px;
-  }
-
-  &__right {
-    @include flex;
-    list-style-type: none;
-
+    ul {
+      display: none;
+    }
     li a {
       text-decoration: none;
       color: $white-color;
@@ -26,19 +23,42 @@
       font-size: 18px;
       padding: 0 15px;
     }
+
+    &--desktop{
+      padding: 0 20px;
+      ul {
+        list-style-type: none;
+        @include flex;
+        display: flex;
+      }
+    }
+
+    &--mobile {
+      width: 100%;
+      height: 100vh;
+      background: $secondary-dark-color;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+      }
+      li {
+        padding: 40px 0;
+      }
+    }
   }
 }
 
-.toggle {
+.burger {
   @include flex($justify: center);
   position: fixed;
   top: 20px;
-  right: 25px;
-  background: $black-color;
+  left: 25px;
   color: $white-color;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   cursor: pointer;
-  display: none;
 }
