@@ -2,7 +2,7 @@ import React, {FC} from 'react';
 import {useTranslation} from "react-i18next";
 import Typewriter from 'typewriter-effect';
 import {appConfig} from 'Constants';
-import {WrapperContainer} from "Components/index";
+import {WrapperContainer} from "Components";
 import {Fade} from "react-awesome-reveal";
 
 import './Banner.scss'
@@ -21,13 +21,13 @@ const Banner: FC = (): JSX.Element => {
                     </li>)}
                 </ul>
                 <h1>{t('inf_banner_title')}</h1>
-                <p><Typewriter
+                    <Typewriter
                     options={{
                         strings: [t('inf_banner_text'), t('inf_banner_text_1'), t('inf_banner_text_2'), t('inf_banner_text_3')],
                         autoStart: true,
                         loop: true,
                     }}
-                /></p>
+                />
                 <div className='banner__buttons'>
                     <a className='btn btn-outline' href='/assets/CV_Mateusz_Bonar.pdf' download>
                         {t('inf_banner_my_cv')}
@@ -39,9 +39,9 @@ const Banner: FC = (): JSX.Element => {
 
     return (
         <WrapperContainer classes={['banner', 'container']} id="home">
-            <div className="banner__wrapper" id="home">
+            <div className="banner__wrapper">
                 {bannerContent}
-                <div className='banner__img'/>
+               <img src='/images/picture.jpg' alt='banner_img'/>
             </div>
         </WrapperContainer>
     );

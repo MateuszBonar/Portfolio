@@ -13,9 +13,17 @@
 }
 
 .btn-outline {
+  display: block;
   border: 2px solid $primary-red-color;
   border-radius: 50px;
   padding: 13px 40px;
+  text-align: center;
+
+  &:hover {
+    cursor: pointer;
+    background: $primary-red-color;
+    transition: all 0.5s linear;
+  }
 }
 
 .commonIcons {
