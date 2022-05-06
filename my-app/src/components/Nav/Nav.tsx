@@ -35,7 +35,7 @@ const Nav: FC = (): JSX.Element => {
     const nav: JSX.Element = <div className={bemClass("navbar__container", {mobile: isNavVisible, desktop: !isMobile})}>
         <ul>
             {navItems.map(({name, id, href}) => <NavItem key={id} name={t(name)} href={href}
-                                                                         handleClick={() => setIsNavVisible(!isNavVisible)}/>)}
+                                                                         handleClick={isMobile ? toggleNav: undefined}/>)}
         </ul>
     </div>
 

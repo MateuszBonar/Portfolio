@@ -27,6 +27,11 @@
     "inf_nav_about": "O mnie",
     "inf_nav_skills": "Technologie",
     "inf_nav_contact": "Kontakt",
-    "inf_nav_projects": "Projekty"
+    "inf_nav_projects": "Projekty",
+    "inf_contact_title": "Kontakt",
+    "inf_contact_subheader": "Poniżej masz kilka sposobów na kontakt do mnie",
+    "inf_contact_email": "Email",
+    "inf_contact_phone": "Numer telefonu",
+    "inf_contact_data": "Dane"
   }
 }

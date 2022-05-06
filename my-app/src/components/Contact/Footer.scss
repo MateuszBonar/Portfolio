@@ -1,10 +1,10 @@
 @import "src/styles/main";
 
-.contact {
+.footer {
   padding: 80px 0;
   background: $dark-color;
 
-  &__contact-section {
+  &__footer-section {
     @include flex($justify: center);
     color: $white-color;
     font-size: 14px;

@@ -11,7 +11,7 @@ function App() {
             <Nav/>
             <About/>
             <Skills/>
-            {/*<Email/>*/}
+            <Email/>
             <Contact/>
         </div>
     );

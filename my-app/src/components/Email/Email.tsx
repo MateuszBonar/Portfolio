@@ -2,22 +2,30 @@ import React, {FC} from "react";
 
 import './Email.scss'
 import {FaMapMarkerAlt} from "react-icons/fa";
+import {AiOutlineMail, AiOutlinePhone} from "react-icons/ai";
+import {useTranslation} from "react-i18next";
 
 const Email: FC = (): JSX.Element => {
-
+    const {t} = useTranslation()
     return (
         <div className="email">
             <div className="email__title-box">
-                <p className="email__subheader">Może do mnie napiszesz?</p>
-                <h3 className="email__header">Kontakt</h3>
-                <p className="email__desc">lorem ipsum dwadadwadawdawa wadaw dwadwaawdawd</p>
+                <h3 className="email__header">{t('inf_contact_title')}</h3>
+                <p className="email__desc">{t('inf_contact_subheader')}</p>
+            </div>
+            <div className="email__contact-info-wrapper">
+            <div className="email__contact-info">
+                    <AiOutlinePhone  className="icon"/>
+                    <p>+ 48 783 410 651</p>
             </div>
             <div className="email__contact-info">
-                    <FaMapMarkerAlt  className="icon"/>
-                <div className="email__contact-info-content">
-                    <span>Locate us</span>
-                    <p>King Street, Melboune Victoria</p>
-                </div>
+                <AiOutlineMail  className="icon"/>
+                    <p>mateuszbonar1@gmail.com</p>
+            </div>
+            <div className="email__contact-info">
+                <FaMapMarkerAlt  className="icon"/>
+                    <p>Kostera 43, 28-114 Gnojno</p>
+            </div>
             </div>
         </div>
     )

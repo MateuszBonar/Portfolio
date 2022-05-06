@@ -10,6 +10,6 @@ export const navItems = [
     {
         id: 5,
         name: 'inf_nav_contact',
-        href: '#contact'
+        href: '#footer'
     }
 ];
