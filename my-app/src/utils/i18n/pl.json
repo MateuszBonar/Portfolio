@@ -32,6 +32,8 @@
     "inf_contact_subheader": "Poniżej masz kilka sposobów na kontakt do mnie",
     "inf_contact_email": "Email",
     "inf_contact_phone": "Numer telefonu",
-    "inf_contact_data": "Dane"
+    "inf_contact_data": "Dane",
+    "inf_projects_title": "Projekty",
+    "inf_projects_subheader": "Poniżej znajduje się kilka moich projektów"
   }
 }

@@ -1,14 +1,15 @@
 import React, {FC} from "react";
-
-import './Email.scss'
 import {FaMapMarkerAlt} from "react-icons/fa";
 import {AiOutlineMail, AiOutlinePhone} from "react-icons/ai";
 import {useTranslation} from "react-i18next";
 
+import './Email.scss'
+import {WrapperContainer} from "Components";
+
 const Email: FC = (): JSX.Element => {
     const {t} = useTranslation()
     return (
-        <div className="email">
+        <WrapperContainer classes={['email', 'container']} id="footer">
             <div className="email__title-box">
                 <h3 className="email__header">{t('inf_contact_title')}</h3>
                 <p className="email__desc">{t('inf_contact_subheader')}</p>
@@ -27,7 +28,7 @@ const Email: FC = (): JSX.Element => {
                     <p>Kostera 43, 28-114 Gnojno</p>
             </div>
             </div>
-        </div>
+        </WrapperContainer>
     )
 }
 

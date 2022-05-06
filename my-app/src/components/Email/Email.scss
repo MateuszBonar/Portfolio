@@ -26,7 +26,6 @@
 
   &__desc {
     line-height:30px;
-
     color: $white-color;
     font-size: 16px;
     margin-bottom: 20px;
@@ -49,7 +48,6 @@
     background : $dark-color;
 
     @include breakpoint($md) {
-      //@include flex($justify: space-between);
       width: 30%;
     }
 
