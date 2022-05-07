@@ -1,2 +1,2 @@
-export {appConfig} from './config';
-export * from './contants'
+export { appConfig } from './config';
+export * from './contants';

@@ -8,10 +8,10 @@ import en from './en.json';
 export const resources = { pl, en };
 
 i18n.use(initReactI18next).init({
-    resources,
-    initImmediate: false,
-    fallbackLng: DEFAULT_SYSTEM_LANG,
-    supportedLngs: AVAILABLE_SYSTEM_LANGS,
-    defaultNS: 'translations',
-    debug: false,
+  resources,
+  initImmediate: false,
+  fallbackLng: DEFAULT_SYSTEM_LANG,
+  supportedLngs: AVAILABLE_SYSTEM_LANGS,
+  defaultNS: 'translations',
+  debug: false,
 });
