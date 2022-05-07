@@ -29,7 +29,7 @@ const Banner: FC = (): JSX.Element => {
         <h1>{t('inf_banner_title')}</h1>
         <Typewriter
           options={{
-            strings: [t('inf_banner_text'), t('inf_banner_text_1'), t('inf_banner_text_2'), t('inf_banner_text_3')],
+            strings: [t('inf_banner_text'), t('inf_banner_text_1'), t('inf_banner_text_2'), t('inf_banner_text_3'), t('inf_banner_text_4')],
             autoStart: true,
             loop: true,
           }}

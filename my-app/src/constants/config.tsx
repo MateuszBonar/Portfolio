@@ -72,21 +72,21 @@ export const appConfig = {
   projects: [
     {
       tags: ['React', 'Typescript', 'Antd-design', 'RapidApi'],
-      img: 'https://img.pakamera.net/i1/7/954/obrazy-i-plakaty-12320957_8726585954.jpg',
+      img: '',
       title: 'CryptoApp - Crypto currency checker',
       link: 'https://github.com/MateuszBonar/CryptoApp',
       desc: 'Jest to projekt który porusza wykorzystanie RapidApi i Antd-design. Projekt został stworzony w React i Typescript. Pozwala na podgląd aktyalnych kursów krupotwalut, wykresy oraz najnowsze informacje.',
     },
     {
       tags: ['React', 'Typescript', 'Boostrap', 'Redux'],
-      img: 'https://img.pakamera.net/i1/7/954/obrazy-i-plakaty-12320957_8726585954.jpg',
+      img: '',
       title: 'ToDoApp - ToDo list',
       link: 'https://github.com/MateuszBonar/TodoApp-React-Redux',
       desc: 'Jest to projekt który porusza wykorzystanie Redux Dev Toolkit i framework Boostrap. Projekt został stworzony w React i Typescript. Aplikacja pozwala na zmianę języka filtrowanie, dodawanie, usuwanie i sortowanie listy rzeczy do zrobienia.',
     },
     {
       tags: ['React', 'Typescript', 'E-commerce'],
-      img: 'https://img.pakamera.net/i1/7/954/obrazy-i-plakaty-12320957_8726585954.jpg',
+      img: '',
       title: 'EcommerceApp - E-commerce',
       link: 'https://github.com/MateuszBonar/EcommerceApp',
       desc: 'Jest to projekt który wykorzystuje Redux Dev Toolkit i oraz framework e-commerce. Projekt został stworzony w React i Typescript. Aplikacja pozwala na wybór produktów z api i uzupełnienie koszyka.',

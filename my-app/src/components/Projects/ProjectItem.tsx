@@ -3,6 +3,8 @@ import { Fade } from 'react-awesome-reveal';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 import { useTranslation } from 'react-i18next';
 
+import noImage from 'Assets/images/no-image.jpg';
+
 import './ProjectItem.scss';
 
 const ProjectItem: FC<{
@@ -18,7 +20,7 @@ const ProjectItem: FC<{
 
   return <Fade className='project-item'>
     <div>
-      <img src={img} alt={title} />
+       <img src={img || noImage} alt={title} />
       <div className='project-item__content'>
         <div className='project-item__tags'>
           {tags.map(tag => <p className='project-item__tag'>{tag}</p>)}
