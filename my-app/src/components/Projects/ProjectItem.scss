@@ -1,0 +1,79 @@
+@import "src/styles/main";
+
+
+.project-item {
+  margin-bottom: 40px;
+  width: 100%;
+
+  @include breakpoint($sm) {
+    width: 45%;
+  }
+
+  @include breakpoint($lg) {
+    width: 30%;
+  }
+
+  &__content {
+    padding: 20px;
+    background: $dark-color;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+
+  &__tags {
+    @include flex;
+    flex-wrap: wrap;
+  }
+
+  &__tag {
+    background: $primary-red-color;
+    padding: 8px;
+    border-radius: 16px;
+    color: $white-color;
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 10px;
+
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  h3 {
+    display: block;
+    color: $white-color;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  &__read-more {
+    @include flex;
+
+    a {
+      font-size: 14px;
+      color: $primary-red-color;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    svg {
+      margin-left: 16px;
+      color: $primary-red-color
+    }
+
+    &:hover {
+      a, svg {
+        color: $white-color;
+        cursor: pointer;
+        transition: .3s ease;
+      }
+    }
+  }
+}
