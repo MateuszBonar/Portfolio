@@ -3,9 +3,10 @@ import { WrapperContainer } from 'Components';
 import { Fade } from 'react-awesome-reveal';
 import { useTranslation } from 'react-i18next';
 
-import './Projects.scss';
 import ProjectItem from 'Components/Projects/ProjectItem';
 import { appConfig } from 'Constants';
+
+import './Projects.scss';
 
 const Projects: FC = (): JSX.Element => {
   const { t } = useTranslation();
