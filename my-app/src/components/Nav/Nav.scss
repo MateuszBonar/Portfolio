@@ -13,6 +13,7 @@
   &__container {
     @include flex($justify: space-between);
     height: 100px;
+    transition: .3s ease;
     ul {
       display: none;
     }

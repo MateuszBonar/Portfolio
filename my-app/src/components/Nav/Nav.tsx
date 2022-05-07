@@ -38,6 +38,9 @@ const Nav: FC = (): JSX.Element => {
         <NavItem key={id} name={t(name)} href={href}
                  handleClick={isMobile ? toggleNav : undefined} />)}
     </ul>
+    <div>
+
+    </div>
   </div>;
 
   return (
