@@ -21,7 +21,7 @@ const Nav: FC = (): JSX.Element => {
     setIsNavVisible(!isNavVisible);
   };
 
-  function handleWindowSizeChange() {
+   const handleWindowSizeChange = (): void  =>  {
     setIsMobile(window.innerWidth < MOBILE_BREAKPOINT);
   }
 
