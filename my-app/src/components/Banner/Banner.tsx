@@ -6,6 +6,11 @@ import { Fade } from 'react-awesome-reveal';
 import { appConfig } from 'Constants';
 import { WrapperContainer } from 'Components';
 
+// @ts-ignore
+import cv from 'Assets/other/cv.pdf';
+
+import myPhoto from '../../assets/images/photo.jpg';
+
 import './Banner.scss';
 
 const Banner: FC = (): JSX.Element => {
@@ -30,7 +35,7 @@ const Banner: FC = (): JSX.Element => {
           }}
         />
         <div className='banner__buttons'>
-          <a className='btn btn-outline' href='/assets/CV_Mateusz_Bonar.pdf' download>
+          <a className='btn btn-outline' href={cv} download="Mateusz_Bonar_CV.pdf">
             {t('inf_banner_my_cv')}
           </a>
         </div>
@@ -42,7 +47,7 @@ const Banner: FC = (): JSX.Element => {
     <WrapperContainer classes={['banner', 'container']} id='home'>
       <div className='banner__wrapper'>
         {bannerContent}
-        <img src='/images/picture.jpg' alt='banner_img' />
+        <img src={myPhoto} alt='banner_img' />
       </div>
     </WrapperContainer>
   );

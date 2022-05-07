@@ -26,7 +26,7 @@ const ProjectItem: FC<{
         <h3>{title}</h3>
         <p>{desc}</p>
         <div className='project-item__read-more'>
-          <a href={link} target="_blank">{t('inf_projects_read_more')}</a>
+          <a href={link}>{t('inf_projects_read_more')}</a>
           <BsFillArrowRightCircleFill />
         </div>
       </div>
