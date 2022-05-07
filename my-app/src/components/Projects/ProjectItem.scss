@@ -18,6 +18,14 @@
     background: $dark-color;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
+
+    p {
+      color: $white-color;
+      font-size: 14px;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      font-weight: 400;
+    }
   }
 
   &__tags {
@@ -27,7 +35,7 @@
 
   &__tag {
     background: $primary-red-color;
-    padding: 8px;
+    padding: 3px 6px;
     border-radius: 16px;
     color: $white-color;
     font-weight: 600;

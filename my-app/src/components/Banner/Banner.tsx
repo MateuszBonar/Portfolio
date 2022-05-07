@@ -16,7 +16,7 @@ const Banner: FC = (): JSX.Element => {
       <div className='banner__section'>
         <ul className='banner__ul'>
           {appConfig.banner.bannerIcons.map(({ icon, link }) => <li>
-            <a href={link}>
+            <a href={link} key={link}>
               {icon}
             </a>
           </li>)}

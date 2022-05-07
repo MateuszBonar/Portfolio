@@ -5,11 +5,12 @@ import { useTranslation } from 'react-i18next';
 
 import './Projects.scss';
 import ProjectItem from 'Components/Projects/ProjectItem';
+import { appConfig } from 'Constants';
 
 const Projects: FC = (): JSX.Element => {
   const { t } = useTranslation();
 
-  return <WrapperContainer classes={['projects', 'container']} id='footer'>
+  return <WrapperContainer classes={['projects', 'container']} id='projects'>
     <div className='projects__content'>
       <Fade>
         <div className='projects__title'>
@@ -22,14 +23,10 @@ const Projects: FC = (): JSX.Element => {
         </div>
       </Fade>
     </div>
-    <div className="projects__carousel">
-        <ProjectItem tags={['React', 'Javascript','Typescript']} img={'https://img.pakamera.net/i1/7/954/obrazy-i-plakaty-12320957_8726585954.jpg'} title={'Projekt do czegoś'} link={'test'}/>
-        <ProjectItem tags={['React', 'Javascript','Typescript']} img={'https://img.pakamera.net/i1/7/954/obrazy-i-plakaty-12320957_8726585954.jpg'} title={'Projekt do czegoś'} link={'test'}/>
-        <ProjectItem tags={['React', 'Javascript','Typescript']} img={'https://img.pakamera.net/i1/7/954/obrazy-i-plakaty-12320957_8726585954.jpg'} title={'Projekt do czegoś'} link={'test'}/>
-        <ProjectItem tags={['React', 'Javascript','Typescript']} img={'https://img.pakamera.net/i1/7/954/obrazy-i-plakaty-12320957_8726585954.jpg'} title={'Projekt do czegoś'} link={'test'}/>
-        <ProjectItem tags={['React', 'Javascript','Typescript']} img={'https://img.pakamera.net/i1/7/954/obrazy-i-plakaty-12320957_8726585954.jpg'} title={'Projekt do czegoś'} link={'test'}/>
-        <ProjectItem tags={['React', 'Javascript','Typescript']} img={'https://img.pakamera.net/i1/7/954/obrazy-i-plakaty-12320957_8726585954.jpg'} title={'Projekt do czegoś'} link={'test'}/>
-        <ProjectItem tags={['React', 'Javascript','Typescript']} img={'https://img.pakamera.net/i1/7/954/obrazy-i-plakaty-12320957_8726585954.jpg'} title={'Projekt do czegoś'} link={'test'}/>
+    <div className='projects__carousel'>
+      {
+        appConfig.projects.map(el => <ProjectItem {...el} key={el.link}/>)
+      }
     </div>
   </WrapperContainer>;
 };

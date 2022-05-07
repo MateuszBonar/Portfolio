@@ -24,7 +24,7 @@ const Footer: FC = (): JSX.Element => {
               </p>
             </div>
             <ul className='footer__icons contactCircles'>
-              {appConfig.contact.contactIcons.map(({ icon }) => <li>
+              {appConfig.contact.contactIcons.map(({ icon,link }) => <li key={link}>
                 {icon}
               </li>)}
             </ul>

@@ -22,7 +22,7 @@ const Skills: FC = (): JSX.Element => {
         <Fade>
           <div className='skills__cards'>
             {appConfig.skills.mySkills.map((info) => (
-              <div className='skills__wrapper-box'>
+              <div className='skills__wrapper-box' key={info.id}>
                 <div className='skills__box'>
                   {info.icon}
                   <div className='skills__box-header'>{t(info.heading)}</div>

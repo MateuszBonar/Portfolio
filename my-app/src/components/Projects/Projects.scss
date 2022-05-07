@@ -22,7 +22,7 @@
   }
 
   &__carousel {
-    @include flex($justify: space-around);
+    @include flex($align: flex-start, $justify: space-around);
     flex-wrap: wrap;
   }
 }
