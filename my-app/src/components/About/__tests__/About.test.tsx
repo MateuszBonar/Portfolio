@@ -18,9 +18,16 @@ describe('About', () => {
     expect(infoDiv).toBeInTheDocument();
   });
 
-  it('render about me', () => {
+  it('render about me 1', () => {
     render(<About />);
     const aboutDiv = screen.getByText('inf_about_me_about_1');
     expect(aboutDiv).toBeInTheDocument();
   })
+
+  it('render about me 2', () => {
+    render(<About />);
+    const aboutDiv = screen.getByText('inf_about_me_about_2');
+    expect(aboutDiv).toBeInTheDocument();
+  })
+
 });
