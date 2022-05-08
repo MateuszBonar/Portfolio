@@ -1,10 +1,10 @@
 import React, { FC } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Fade } from 'react-awesome-reveal';
 
 import { WrapperContainer } from 'Components';
 
 import './About.scss';
-import { Fade } from 'react-awesome-reveal';
 
 const About: FC = (): JSX.Element => {
   const { t } = useTranslation();
