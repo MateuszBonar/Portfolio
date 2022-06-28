@@ -11,7 +11,7 @@ const About: FC = (): JSX.Element => {
 
   return (
     <WrapperContainer classes={['about', 'container']} id='about'>
-      <div>
+      <div data-testid="main-element">
         <Fade>
           <div className='about__info'>
             <h1>{t('inf_about_me_title')}</h1>
