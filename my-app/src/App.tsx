@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Banner, Nav, Skills, About, Contact, Email, Projects } from 'Components';
+import { Banner, Nav, Skills, About, Footer, Email, Projects } from 'Components';
 
 import './App.css';
 
@@ -13,7 +13,7 @@ function App() {
       <Skills />
       <Projects />
       <Email />
-      <Contact />
+      <Footer />
     </div>
   );
 }
