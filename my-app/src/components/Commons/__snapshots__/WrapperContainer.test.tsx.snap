@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WrapperContainer renders about 1`] = `
+<div>
+  <div
+    class="about"
+    id="about"
+  >
+    <div
+      class="container"
+    />
+  </div>
+</div>
+`;
+
+exports[`WrapperContainer renders correctly 1`] = `
+<div>
+  <div
+    class="about"
+    id="about"
+  >
+    <div
+      class="container"
+    />
+  </div>
+</div>
+`;
